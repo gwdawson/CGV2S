@@ -30,8 +30,3 @@ CREATE TABLE usercards (
   usercards_rank TEXT,
   usercards_xp INTEGER
 );
-
-SELECT * FROM users;
-SELECT * FROM cards;
-SELECT * FROM userdata;
-SELECT * FROM usercards;
