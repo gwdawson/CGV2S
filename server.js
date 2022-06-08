@@ -1,15 +1,14 @@
-const express = require("express");
-const database = require("./database");
-const cors = require("cors");
+const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = 9000;
 
-const { getDefault } = require("./controller");
+const { postUser } = require('./controller/user.controller');
 
 app.use(express.json());
 app.use(cors());
 
-app.get("/", getDefault);
+app.post('/user', postUser);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
