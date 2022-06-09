@@ -3,10 +3,12 @@ const cors = require('cors');
 const app = express();
 const port = 9000;
 
-const { postUser } = require('./controller/user.controller');
+const { getUserByUsername, getUserById, postUser } = require('./controller/user.controller');
 
 app.use(express.json());
 app.use(cors());
+
+app.get('/username/:username', getUserByUsername);
 
 app.post('/user', postUser);
 

@@ -1,5 +1,10 @@
 const database = require('../database');
 
+exports.selectUserByUsername = async (user_name) => {
+  const data = await database.query(`SELECT * FROM users WHERE user_name = $1;`, [user_name]);
+  return data.rows[0];
+};
+
 exports.insertUser = async (user_id, user_name, user_password) => {
   const data = await database.query(
     `INSERT INTO users (user_id, user_name, user_password) VALUES ($1, $2, $3) RETURNING *;`,
