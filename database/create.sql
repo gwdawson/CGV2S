@@ -19,13 +19,14 @@ CREATE TABLE cards (
 );
 
 CREATE TABLE userdata (
-  user_id INTEGER,
+  user_id BIGINT,
   userdata_currency INTEGER
 );
 
 CREATE TABLE usercards (
-  user_id INTEGER,
+  user_id BIGINT,
   card_id INTEGER,
+  usercards_id SERIAL PRIMARY KEY,
   usercards_issue INTEGER,
   usercards_rank TEXT,
   usercards_xp INTEGER
