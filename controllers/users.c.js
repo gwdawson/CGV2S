@@ -13,7 +13,7 @@ exports.postUsers = async (req, res) => {
 exports.getUsersByUsername = async (req, res) => {
   const users = await selectUsersByUsername(req.params.username);
   if (users.length !== 0) {
-    res.status(200).send({ status: 200, message: 'User found', data: user[0] });
+    res.status(200).send({ status: 200, message: 'User found', data: users[0] });
   } else {
     res.status(200).send({ status: 200, message: 'User not found' });
   }
@@ -22,7 +22,7 @@ exports.getUsersByUsername = async (req, res) => {
 exports.getUsersByUserid = async (req, res) => {
   const users = await selectUsersByUserid(req.params.userid);
   if (users.length !== 0) {
-    res.status(200).send({ status: 200, message: 'User found', data: user[0] });
+    res.status(200).send({ status: 200, message: 'User found', data: users[0] });
   } else {
     res.status(200).send({ status: 200, message: 'User not found' });
   }
