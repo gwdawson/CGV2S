@@ -1,12 +1,24 @@
-const { selectUserByUsername, insertUser } = require('../model/user.model');
+const { selectUserByUsername, selectUserByUserId, insertUser } = require('../model/user.model');
 
 exports.getUserByUsername = async (req, res) => {
   const { username } = req.params;
   const user = await selectUserByUsername(username);
+  console.log(user);
   if (user.length !== 0) {
     res.status(200).send({ status: 200, message: 'User found', data: user[0] });
   } else {
-    return res.status(200).send({ status: 200, message: 'User not found' });
+    res.status(200).send({ status: 200, message: 'User not found' });
+  }
+};
+
+exports.getUserById = async (req, res) => {
+  const { id } = req.params;
+  const user = await selectUserByUserId(id);
+  console.log(user);
+  if (user.length !== 0) {
+    res.status(200).send({ status: 200, message: 'User found', data: user[0] });
+  } else {
+    res.status(200).send({ status: 200, message: 'User not found' });
   }
 };
 

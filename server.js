@@ -10,6 +10,8 @@ app.use(cors());
 
 app.get('/username/:username', getUserByUsername);
 
+app.get('/userid/:id', getUserById);
+
 app.post('/user', postUser);
 
 app.listen(port, () => {
