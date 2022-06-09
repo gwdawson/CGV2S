@@ -10,10 +10,10 @@ exports.selectUserByUserId = async (user_id) => {
   return data.rows;
 };
 
-exports.insertUser = async (user_id, user_name, user_password) => {
+exports.insertUser = async (user_id, user_name, user_password, user_avatar_url) => {
   const data = await database.query(
-    `INSERT INTO users (user_id, user_name, user_password) VALUES ($1, $2, $3) RETURNING *;`,
-    [user_id, user_name.toLowerCase(), user_password]
+    `INSERT INTO users (user_id, user_name, user_password, user_avatar_url) VALUES ($1, $2, $3, $4) RETURNING *;`,
+    [user_id, user_name.toLowerCase(), user_password, user_avatar_url]
   );
   return data.rows[0];
 };
