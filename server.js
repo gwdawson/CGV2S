@@ -4,7 +4,7 @@ const app = express();
 const port = 9000;
 
 const { postUsers, getUsersByUsername, getUsersByUserid } = require('./controllers/users.c');
-const { postCards } = require('./controllers/cards.c');
+const { postCards, incrementCardIssue } = require('./controllers/cards.c');
 const { postUserdata } = require('./controllers/userdata.c');
 const { postUsercards, getUsercardsById } = require('./controllers/usercards.c');
 
@@ -17,6 +17,8 @@ app.post('/users', postUsers);
 
 app.get('/usercards/:userid', getUsercardsById);
 app.post('/usercards/', postUsercards);
+
+app.patch('/cards/', incrementCardIssue);
 
 // app.post('/cards', postCards);
 // app.post('/userdata', postUserdata);
