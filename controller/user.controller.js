@@ -3,7 +3,6 @@ const { selectUserByUsername, selectUserByUserId, insertUser } = require('../mod
 exports.getUserByUsername = async (req, res) => {
   const { username } = req.params;
   const user = await selectUserByUsername(username);
-  console.log(user);
   if (user.length !== 0) {
     res.status(200).send({ status: 200, message: 'User found', data: user[0] });
   } else {
@@ -14,7 +13,6 @@ exports.getUserByUsername = async (req, res) => {
 exports.getUserById = async (req, res) => {
   const { id } = req.params;
   const user = await selectUserByUserId(id);
-  console.log(user);
   if (user.length !== 0) {
     res.status(200).send({ status: 200, message: 'User found', data: user[0] });
   } else {
