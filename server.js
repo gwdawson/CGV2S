@@ -16,6 +16,7 @@ app.get('/users/i/:userid', getUsersByUserid);
 app.post('/users', postUsers);
 
 app.get('/usercards/:userid', getUsercardsById);
+app.post('/usercards/', postUsercards);
 
 // app.post('/cards', postCards);
 // app.post('/userdata', postUserdata);
