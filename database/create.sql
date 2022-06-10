@@ -30,10 +30,10 @@ CREATE TABLE usercards (
 );
 
 INSERT INTO users ("user_id", "username", "password", "avatar_url", "join_date", "currency")
-VALUES (1234567812345678, 'gareth', '123456', 'https://64.media.tumblr.com/24f93e6373bd3d6a27ec2e096658b865/tumblr_nwxt5iu24I1ujp48jo1_400.png', 1654857949, 1000);
+VALUES (1234567812345678, 'gareth', '123456', 'https://64.media.tumblr.com/24f93e6373bd3d6a27ec2e096658b865/tumblr_nwxt5iu24I1ujp48jo1_400.png', 1654860449, 1000);
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
 VALUES ('CHAEYOUNG', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/984520837237473361/Untitled-1.png');
 
 INSERT INTO usercards ("user_id", "card_id", "issue", "rank", "xp")
-VALUES (0000000000000001, 1, 1, 'H', 0);
+VALUES (1234567812345678, 1, 1, 'H', 0);
