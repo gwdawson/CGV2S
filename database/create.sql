@@ -33,28 +33,28 @@ INSERT INTO users ("user_id", "username", "password", "avatar_url", "join_date",
 VALUES (1234567812345678, 'gareth', '$2a$10$0JLmdp7BvXoNnxkqvV7Gz.xCZbE6.UqWoA3TG5kJGklwf5lm/HBVu', 'https://64.media.tumblr.com/24f93e6373bd3d6a27ec2e096658b865/tumblr_nwxt5iu24I1ujp48jo1_400.png', 1654860449, 1000);
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
-VALUES ('CHAEYOUNG', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/985566772142952468/chae.png');
+VALUES ('CHAEYOUNG', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566772142952468/chae.png');
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
-VALUES ('DAHYUN', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/985566772461723728/dahyun.png');
+VALUES ('DAHYUN', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566772461723728/dahyun.png');
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
-VALUES ('JEONGYEON', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/985566772897935360/jeongyeon.png');
+VALUES ('JEONGYEON', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566772897935360/jeongyeon.png');
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
-VALUES ('JIHYO', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/985566773422227506/jihyo.png');
+VALUES ('JIHYO', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566773422227506/jihyo.png');
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
-VALUES ('MINA', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/985566773929726053/mina.png');
+VALUES ('MINA', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566773929726053/mina.png');
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
-VALUES ('MOMO', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/985566774244302888/momo.png');
+VALUES ('MOMO', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566774244302888/momo.png');
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
-VALUES ('NAYEON', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/985566774533713960/nayeon.png');
+VALUES ('NAYEON', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566774533713960/nayeon.png');
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
-VALUES ('SANA', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/985566774802120785/sana.png');
+VALUES ('SANA', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566774802120785/sana.png');
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
-VALUES ('TZUYU', 'TWICE', 1, 'https://media.discordapp.net/attachments/983643860406272060/985566775091531777/tzuyu.png');
+VALUES ('TZUYU', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566775091531777/tzuyu.png');
