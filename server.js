@@ -5,7 +5,7 @@ const port = 9000;
 
 const { postUsers, getUsersByUsername, getUsersById } = require('./controllers/users.c');
 const { postUsercards, getUsercardsById } = require('./controllers/usercards.c');
-const { getFiveCards } = require('./controllers/cards.c');
+const { getFiveCards, patchCardsById } = require('./controllers/cards.c');
 
 app.use(express.json());
 app.use(cors());
@@ -15,6 +15,7 @@ app.get('/users/id/:userid', getUsersById);
 app.post('/users', postUsers);
 
 app.get('/cards/pack', getFiveCards);
+app.patch('/cards/issue/:cardid', patchCardsById);
 
 app.get('/usercards/:userid', getUsercardsById);
 app.post('/usercards', postUsercards);
