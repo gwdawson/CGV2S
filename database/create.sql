@@ -9,7 +9,8 @@ CREATE TABLE users (
   "password" VARCHAR(255), 
   "avatar_url" VARCHAR(255),
   "join_date" BIGINT,
-  "currency" INTEGER
+  "currency" INTEGER,
+  "packs" INTEGER
 );
 
 CREATE TABLE cards (
