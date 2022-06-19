@@ -10,7 +10,6 @@ CREATE TABLE users (
   "avatar_url" VARCHAR(255),
   "join_date" BIGINT,
   "currency" INTEGER,
-  "packs" INTEGER
 );
 
 CREATE TABLE cards (
@@ -31,7 +30,7 @@ CREATE TABLE usercards (
 );
 
 INSERT INTO users ("user_id", "username", "password", "avatar_url", "join_date", "currency")
-VALUES (1234567812345678, 'gareth', '$2a$10$0JLmdp7BvXoNnxkqvV7Gz.xCZbE6.UqWoA3TG5kJGklwf5lm/HBVu', 'https://64.media.tumblr.com/24f93e6373bd3d6a27ec2e096658b865/tumblr_nwxt5iu24I1ujp48jo1_400.png', 1654860449, 1000);
+VALUES (1234567812345678, 'gareth', '$2a$10$0JLmdp7BvXoNnxkqvV7Gz.xCZbE6.UqWoA3TG5kJGklwf5lm/HBVu', 'https://64.media.tumblr.com/24f93e6373bd3d6a27ec2e096658b865/tumblr_nwxt5iu24I1ujp48jo1_400.png', 1654815600000, 1000);
 
 INSERT INTO cards ("name", "group", "issue_count", "image_url")
 VALUES ('CHAEYOUNG', 'TWICE', 0, 'https://media.discordapp.net/attachments/983643860406272060/985566772142952468/chae.png');
