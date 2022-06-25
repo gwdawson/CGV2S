@@ -13,3 +13,7 @@ exports.selectUserdata = (username) => {
     [username]
   );
 };
+
+exports.selectUserdataPassword = (username) => {
+  return database.query(`SELECT password FROM userdata WHERE username = $1`, [username]);
+};
