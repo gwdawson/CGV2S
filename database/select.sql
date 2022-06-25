@@ -1,5 +1,7 @@
 \c card_game_application
 
-SELECT * FROM users;
 SELECT * FROM cards;
+SELECT * FROM achievements;
+SELECT * FROM userdata;
 SELECT * FROM usercards;
+SELECT * FROM userachievements;
