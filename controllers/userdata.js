@@ -13,7 +13,7 @@ exports.postUserdata = async (req, res) => {
 
 exports.getUserdata = async (req, res) => {
   try {
-    const { username } = req.body;
+    const { username } = req.query;
     const { rows } = await selectUserdata(username);
     if (rows.length > 0) {
       return res.status(200).send({ status: 200, message: rows[0] });
@@ -28,7 +28,7 @@ exports.getUserdata = async (req, res) => {
 
 exports.getUserdataPassword = async (req, res) => {
   try {
-    const { username } = req.body;
+    const { username } = req.query;
     const { rows } = await selectUserdataPassword(username);
     if (rows.length > 0) {
       return res.status(200).send({ status: 200, message: rows[0] });
