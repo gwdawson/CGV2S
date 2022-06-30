@@ -7,10 +7,17 @@ exports.insertUserdata = (userid, username, password, avatar, joindate, cards, t
   );
 };
 
-exports.selectUserdata = (username) => {
+exports.selectUserdataUsername = (username) => {
   return database.query(
     `SELECT userid, username, avatar, joindate, cards, trades, currency, packs FROM userdata WHERE username = $1`,
     [username]
+  );
+};
+
+exports.selectUserdataUserid = (userid) => {
+  return database.query(
+    `SELECT userid, username, avatar, joindate, cards, trades, currency, packs FROM userdata WHERE userid = $1`,
+    [userid]
   );
 };
 
