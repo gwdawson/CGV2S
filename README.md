@@ -1,4 +1,4 @@
-## CGV2S
+## CGV2S - Card Game V2 Server
 
 ![An illustration showing a variety of differently themed Octocats. Monuments from different cities are indicated in the background like the Space Needle, Berlin Fernsehturm and Transamerica Pyramid.](./assets/banner.jpeg)
 
@@ -6,24 +6,11 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis blanditiis atque
 
 ## Useful Links
 
-- [ ] [How to Play]()
-- [ ] [Development Process]()
+- [ ] [Live Application]()
+- [ ] [How to play]()
 
-## Tools and technologies
-
-```json
-{
-  "languages": {
-    "JavaScript": true
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "pg": "^8.7.3"
-  }
-}
-```
+- [x] [Application Repository](https://github.com/gwdawson/CGV2A)
+- [x] [Server Repository](https://github.com/gwdawson/CGV2S)
 
 ## Getting started
 
