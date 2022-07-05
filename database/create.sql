@@ -52,5 +52,5 @@ INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 5,
 INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 5, 2);
 INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 5, 3);
 
-INSERT INTO userdata ("userid", "username", "password", "avatar", "joindate", "cards", "trades", "currency", "packs")
-VALUES (7866352741557574, 'gareth', '$2a$10$0JLmdp7BvXoNnxkqvV7Gz.xCZbE6.UqWoA3TG5kJGklwf5lm/HBVu', 'https://i.imgur.com/lbHtWIk.jpeg', '2020-01-01 00:00:00', 0, 0, 0, 0);
+INSERT INTO userdata ("userid", "username", "password", "avatar", "joindate", "cards", "trades", "currency", "packs") VALUES (7866352741557574, 'Gareth', '$2a$10$0JLmdp7BvXoNnxkqvV7Gz.xCZbE6.UqWoA3TG5kJGklwf5lm/HBVu', 'https://i.pinimg.com/736x/ec/df/6b/ecdf6b402e8f6c87066cb8d4e600b117.jpg', '2020-01-01 00:00:00', 0, 0, 0, 0);
+INSERT INTO userdata ("userid", "username", "password", "avatar", "joindate", "cards", "trades", "currency", "packs") VALUES (4626279753625442, 'username', '$2a$10$0JLmdp7BvXoNnxkqvV7Gz.xCZbE6.UqWoA3TG5kJGklwf5lm/HBVu', 'https://i.pinimg.com/736x/ec/df/6b/ecdf6b402e8f6c87066cb8d4e600b117.jpg', '2020-01-01 00:00:00', 0, 0, 0, 0);
