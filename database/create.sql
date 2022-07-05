@@ -7,13 +7,8 @@ CREATE TABLE cards (
   "cardid" SERIAL PRIMARY KEY,
   "idol" TEXT,
   "group" TEXT,
+  "rarity" INTEGER,
   "issuecount" INTEGER,
-  "imageurl" TEXT
-);
-
-CREATE TABLE achievements (
-  "achievementid" SERIAL PRIMARY KEY,
-  "name" TEXT,
   "imageurl" TEXT
 );
 
@@ -30,16 +25,32 @@ CREATE TABLE userdata (
 );
 
 CREATE TABLE usercards (
-  "userid" INTEGER,
+  "userid" BIGINT,
   "cardid" INTEGER,
   "issue" INTEGER
 );
 
-CREATE TABLE userachievements (
-  "userid" INTEGER,
-  "achievementid" INTEGER,
-  "unlockdate" TIMESTAMP
-);
+INSERT INTO cards ("idol", "group", "rarity", "issuecount", "imageurl") VALUES ('Nayeon', 'Twice', 1, 3, 'https://media.discordapp.net/attachments/983643860406272060/993874866719707249/Nayeon-1-V1.png');
+INSERT INTO cards ("idol", "group", "rarity", "issuecount", "imageurl") VALUES ('Nayeon', 'Twice', 2, 3, 'https://media.discordapp.net/attachments/983643860406272060/993874867155898450/Nayeon-2-V1.png');
+INSERT INTO cards ("idol", "group", "rarity", "issuecount", "imageurl") VALUES ('Nayeon', 'Twice', 3, 3, 'https://media.discordapp.net/attachments/983643860406272060/993874867533402122/Nayeon-3-V1.png');
+INSERT INTO cards ("idol", "group", "rarity", "issuecount", "imageurl") VALUES ('Nayeon', 'Twice', 4, 3, 'https://media.discordapp.net/attachments/983643860406272060/993874867986370691/Nayeon-4-V1.png');
+INSERT INTO cards ("idol", "group", "rarity", "issuecount", "imageurl") VALUES ('Nayeon', 'Twice', 5, 3, 'https://media.discordapp.net/attachments/983643860406272060/993874868284174346/Nayeon-5-V1.png');
+
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 1, 1);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 1, 2);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 1, 3);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 2, 1);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 2, 2);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 2, 3);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 3, 1);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 3, 2);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 3, 3);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 4, 1);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 4, 2);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 4, 3);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 5, 1);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 5, 2);
+INSERT INTO usercards ("userid", "cardid", "issue") VALUES (7866352741557574, 5, 3);
 
 INSERT INTO userdata ("userid", "username", "password", "avatar", "joindate", "cards", "trades", "currency", "packs")
-VALUES (1111111111111111, 'gareth', '$2a$10$0JLmdp7BvXoNnxkqvV7Gz.xCZbE6.UqWoA3TG5kJGklwf5lm/HBVu', 'https://i.imgur.com/lbHtWIk.jpeg', '2020-01-01 00:00:00', 0, 0, 0, 0);
+VALUES (7866352741557574, 'gareth', '$2a$10$0JLmdp7BvXoNnxkqvV7Gz.xCZbE6.UqWoA3TG5kJGklwf5lm/HBVu', 'https://i.imgur.com/lbHtWIk.jpeg', '2020-01-01 00:00:00', 0, 0, 0, 0);
